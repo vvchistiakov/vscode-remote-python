@@ -1,0 +1,19 @@
+{
+    "name": "Python 3",
+    "context": "..",
+    "image": "python:3.6",
+
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true
+    },
+
+    "extensions":[
+        "ms-python.python"
+    ],
+
+    "postCreateCommand":[
+        "scripts/install-dev-tools.sh"
+    ]
+}
